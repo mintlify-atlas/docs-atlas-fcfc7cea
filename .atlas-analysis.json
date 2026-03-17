@@ -1,0 +1,111 @@
+{
+  "projectType": "saas",
+  "projectName": "Zoo Arcadia",
+  "projectDescription": "A full-stack PHP zoo management platform with role-based back-office for admins, veterinarians, and employees, plus a public-facing site for visitors to explore animals, habitats, and services.",
+  "theme": "palm",
+  "primaryColor": "#848c8e",
+  "lightColor": "#11161e",
+  "darkColor": "#cfd0d2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/installation",
+              "getting-started/environment",
+              "getting-started/database",
+              "getting-started/assets"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/routing",
+              "architecture/domains",
+              "architecture/mvc"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/public-site",
+              "features/animals",
+              "features/habitats",
+              "features/services",
+              "features/testimonials",
+              "features/contact"
+            ]
+          },
+          {
+            "group": "Back-Office",
+            "pages": [
+              "back-office/overview",
+              "back-office/admin",
+              "back-office/veterinarian",
+              "back-office/employee"
+            ]
+          },
+          {
+            "group": "Security & Roles",
+            "pages": [
+              "security/authentication",
+              "security/roles-permissions",
+              "security/session-management"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/local",
+              "deployment/environment-variables"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "REST API",
+            "pages": [
+              "api/overview",
+              "api/animals",
+              "api/habitats",
+              "api/services",
+              "api/schedules",
+              "api/testimonials"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Role-based back-office with admin, veterinarian, and employee dashboards",
+    "Animal management with feeding logs, health state reports, and click statistics",
+    "Habitat management with veterinarian improvement suggestions",
+    "Granular permission system with per-role and per-user permissions",
+    "Public-facing pages for animals, habitats, services, and schedules",
+    "REST API exposing animals, habitats, services, schedules, and testimonials",
+    "Cloudinary integration for responsive image management",
+    "Docker and local deployment options with MariaDB/MySQL"
+  ],
+  "publicApiSurface": [
+    "GET /api/animals — List all animals",
+    "GET /api/animals/{id} — Get animal by ID",
+    "GET /api/habitats — List all habitats",
+    "GET /api/habitats/{id} — Get habitat by ID",
+    "GET /api/services — List all services",
+    "GET /api/schedules — Get zoo schedules",
+    "GET /api/testimonials — Get validated testimonials"
+  ]
+}
